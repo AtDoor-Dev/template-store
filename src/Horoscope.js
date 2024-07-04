@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Handlebars from 'handlebars';
-import templateSource from './template.handlebars';
 
 Handlebars.registerHelper('backgroundImageClass', function (isEnabled) {
   return isEnabled ? 'enabled-bg' : 'disabled-bg';
 });
 
 const Horoscope = ({ data, isEnabled, imageSrc }) => {
-  const template = Handlebars.compile(templateSource);
+  const [template, setTemplate] = useState(null);
+
+  useEffect(() => {
+    fetch('/templates/template-one.handlebars')
+      .then(response => response.text())
+      .then(templateSource => {
+        const compiledTemplate = Handlebars.compile(templateSource);
+        setTemplate(() => compiledTemplate);
+      });
+  }, []);
 
   const table1 = [
     [
@@ -56,6 +64,10 @@ const Horoscope = ({ data, isEnabled, imageSrc }) => {
       { value: data.Tablevalue.Sa }
     ]
   ];
+
+  if (!template) {
+    return <div>Loading template...</div>;
+  }
 
   const htmlContent = template({ ...data, isEnabled, table1, table2, imageSrc });
 

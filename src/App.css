@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+@page {
+  size: A4;
+  margin: 1cm;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -34,5 +39,151 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.header{
+  margin-top: 3%;
+}
+
+.main-header{
+  text-align: center;
+  color: brown;
+}
+.above-heading{
+  margin-bottom: 4px;
+}
+
+.third-line{
+  margin-bottom: 4px;
+}
+
+.top-heading{
+  padding: 0px;
+}
+.third{
+  word-spacing: 5px;
+}
+
+.personal-details {
+  margin-left: 18%;
+  margin-right: 50%;
+  display:block;
+}
+
+table, th, td {
+  border: 2px solid brown;
+  border-collapse: collapse;
+  color:brown;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 8px;
+  text-align: left;
+}
+
+.center-content{
+  text-align: center;
+  display: block;
+  margin-top: 0%;
+  line-height: 0;
+}
+
+
+.logo-image{
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+.image-between-tables {
+ display:block;
+ margin-right:auto;
+ margin-left:auto;
+}
+
+.image-between-tables img {
+  max-width: 100%;
+  height:100px;
+}
+
+.horoscope-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horoscope-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: left;
+  text-align: center;
+}
+
+.horoscope-table {
+  border-collapse: collapse;
+  width: 30%;
+  margin-right: 6%;
+  margin-left: 6%;
+  text-align: center;
+  margin-top: 12px;
+}
+.horoscope-table td {
+  border: 2px solid brown;
+  width:24%;
+  height: 32px;
+  text-align: center;
+}
+
+.family-details{
+  margin-left: 4%;
+  margin-right: 50%;
+  display:block;
+  margin-top: 15px;
+
+}
+p{
+  font-size: 12px;
+}
+
+.left-image {
+  position: absolute;
+  /* top: 100px;  */
+  /* left: 538px;  */
+  width: 6%; 
+}
+.address-container{
+  margin-bottom: 5px;
+}
+
+body {
+  font-family: 'Lohit Tamil', sans-serif;
+}
+
+.tamil-text {
+  font-family: 'Lohit Tamil', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-text {
+  font-family: 'Poppins', sans-serif;
+} 
+
+
+.a4 {
+  width: 210mm;
+  height: 297mm;
+  padding: 10mm;
+  margin: auto;
+  box-shadow: 0 0 5mm rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+@media print {
+  body, .a4 {
+    margin: 0;
+    box-shadow: none;
   }
 }
