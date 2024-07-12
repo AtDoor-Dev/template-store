@@ -98,7 +98,6 @@
 }
 .second-name{
   margin-top: -10px; 
-  /* font-size: 16px; */
   color: rgb(27, 19, 81);
 }
 .third-line{
@@ -111,10 +110,6 @@
 .brown-text{
   color:brown;
 }
-/* .personal-details {
-  margin-left: 10%;
-  margin-right: 59%;
-} */
 .personal-details {
   margin-left: 0%;
   margin-right: 50%;
@@ -239,7 +234,7 @@ table, th, td {
 }
 
 .background-image {
-  background-image: url('./images/enabled-bg.svg'); /* Corrected path */
+  background-image: url('./images/enabled-bg.svg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,8 +268,6 @@ p{
 
 .left-image {
   position: absolute;
-  /* top: 100px;  */
-  /* left: 538px;  */
   width: 6%; 
 }
 .address-container{
@@ -296,6 +289,24 @@ body {
 .english-text {
   font-family: 'Poppins', sans-serif;
 } 
+
+.gender-dropdown {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.gender-dropdown label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.gender-dropdown select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9
+}
 
 
 .a4 {
