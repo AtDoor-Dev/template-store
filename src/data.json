@@ -1,0 +1,138 @@
+{
+    "birthDetails": {
+      "dob": {
+        "dateOfBirth": "07-03-2004",
+        "placeOfBirth": "Thirunelveli",
+        "age": "20 years",
+        "time": "22:13",
+        "day": "sunday"
+      },
+      "tamilYear": "Śrīmukha",
+      "tamilMonth": "Aavani",
+      "tamilDate": "10"
+    },
+    "horoscopeDetails": {
+      "rasi": "Simam",
+      "nakshatra": "Swati",
+      "lagnam": "Kadagam",
+      "BirthStar": "ddff",
+      "gothram": "siva gothram",
+      "mathulam": "dfdfdsa",
+      "naaligai": "df",
+      "thithi": "fadf",
+      "dasaPlanet": "afsd",
+      "dasaBalance": "6 months"
+    },
+    "rasiKatam": [
+    [],
+    ["Me "],
+    [],
+    [],
+    ["Ve "],
+    ["Mo "],
+    ["Ma "],
+    [],
+    [],
+    ["Ju "],
+    [],
+    ["Ka "]
+  ],
+  "rasiPlanets": {
+    "Ma": "7",
+    "Ve": "5",
+    "Me": "2",
+    "Su": "7",
+    "Ka": "12",
+    "Ju": "10",
+    "Mo": "6",
+    "Sa": "12",
+    "Ke": "7",
+    "La": "5",
+    "rasi": ""
+  },
+  "navamsaKatam": [
+    ["Sa "],
+    [],
+    [],
+    [],
+    [],
+    ["Ka ", "Mo "],
+    [],
+    ["Ve ", "Me ", "Ju ", "Ke "],
+    [],
+    ["Ma ", "Su "],
+    ["La "],
+    []
+  ],
+  "navamsaPlanets": {
+    "Ma": "10",
+    "Ve": "8",
+    "Me": "8",
+    "Su": "10",
+    "Ka": "6",
+    "Ju": "8",
+    "Mo": "6",
+    "Sa": "1",
+    "Ke": "8",
+    "La": "11"
+  },
+    "familyDetails": {
+      "fatherName": "Ponmani",
+      "fatherOccupation": "gfhg",
+      "fatherAlive": "Late",
+      "motherName": "Porselvi",
+      "motherOccupation": "none",
+      "motherAlive": "Alive",
+      "religion": "Muslim - Others",
+      "caste": "Achirapakkam Chettiar",
+      "height": "4.8",
+      "siblings": {
+        "brother": {
+          "number": 1,
+          "marriageNum": 0
+        },
+        "sister": {
+          "number": 1,
+          "marriageNum": 0
+        }
+      }
+    },
+    "contactDetails": {
+      "emailId": "kamaleshponmani0703@gmail.com",
+      "contactNumber": "9xxxx346283",
+      "whatsappNumber": "9xxxx346283",
+      "alternativeContactNumber": ""
+    },
+    "ownHouse": "Yes",
+    "personalInfo": {
+      "name": "kamalesh P",
+      "iAm": "Groom",
+      "Profession": "Front End Developer",
+      "height": "4.8",
+      "weight": "54",
+      "profileImage": "",
+      "bloodGroup": "O+ve",
+      "complextion": "Black",
+      "maritalStatus": "Single"
+    },
+    "qualification": {
+      "fieldOfStudy": "PGDCA",
+      "Education": "B.Sc"
+    },
+    "occupation": {
+      "companyName": "Atdoor",
+      "designation": "Developer Trainee",
+      "Income": "dfs",
+      "cityOfWorking": "Tirunelveli"
+    },
+    "residentialAddress": {
+      "address": "24, 3rd Street, Sigaram Nagar, Suthamalli Vilakku.",
+      "landmark": "",
+      "hometown": "Tirunelveli",
+      "city": "Tirunelveli",
+      "stateName": "TAMIL NADU",
+      "nationality": "",
+      "pincode": "627604"
+    }
+}
+  

@@ -1,0 +1,411 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@page {
+  size: A4;
+  margin: 1cm;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header{
+  margin-top: 3%;
+}
+.heading {
+  font-size: 14px;
+  margin-top: 0px; 
+  margin-bottom: 10px; 
+}
+
+.sub-heading {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.main-header{
+  text-align: center;
+  color: rgb(7, 7, 7);
+}
+.mid-heading{
+  text-align: center;
+  color: rgb(7, 7, 7);
+  margin-top: 2%; 
+  margin-bottom: 0%;
+}
+.above-heading{
+  margin-bottom: 4px;
+}
+.below-heading{
+
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+
+.top-heading{
+  padding: 0px;
+}
+.third{
+  word-spacing: 5px;
+}
+.content{
+  color: rgb(7, 7, 7);}
+.table1{
+  color: rgb(7, 7, 7);
+}
+.name{
+  font-size: 23
+  px;
+}
+.address{
+  font-size: 13px;
+  margin-top: 7px;
+}
+.below-heading {
+  margin-top: 8px;
+  font-size: 20px;
+}
+.second-name{
+  margin-top: -7px;
+  color: rgb(7, 7, 7);
+  font-size: 120%;
+}
+.third-line{
+
+  margin-top: -11px;
+  font-size: 43px;
+  margin-bottom: 4px;
+}
+.blue-text{
+  color: rgb(7, 7, 7);
+}
+.brown-text{
+  color: rgb(7, 7, 7);
+}
+.personal-details {
+  align-content: left;
+}
+p{
+  font-size: 20px;
+}
+img {
+  width: 100px;
+}
+ table, th, td {
+  border: none;
+  border-collapse: collapse;
+  color: rgb(7, 7, 7);
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 5px;
+  text-align: left;
+  white-space: nowrap;
+  margin-right: 40%;
+} 
+
+.pull-stop::after {
+  content: ":";
+  margin-left: 5px;
+}
+
+.centered-container {
+  display: flex;
+   width:20%
+}
+
+.center-content{
+  text-align: center;
+  display: block;
+  margin-top: 0%;
+  line-height: 0;
+}
+
+.logo-image{
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 0%;
+  width: 35px;
+  margin-top: -67px;
+  
+}
+.table-divider {
+  border: 0;
+  height: 1px;
+  background: #000;
+  width: 100%; 
+  margin: 20px 0; 
+}
+.image-between-tables {
+ display:block;
+ margin-right:auto;
+ margin-left:auto;
+}
+
+.image-between-tables img {
+  max-width: 100%;
+  height:100px;
+}
+
+.horoscope-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horoscope-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: left;
+  text-align: center;
+}
+
+.horoscope-table {
+  border-collapse: collapse;
+  width: 30%;
+  margin-right: 6%;
+  margin-left: 5%;
+  text-align: center;
+  margin-top: 14px;
+}
+.horoscope-table td {
+  border: 2px solid rgb(10, 9, 9);
+  width: 24%;
+  height: 47px;
+  text-align: center;
+  color: rgb(7, 7, 7);
+}
+.third{
+  margin-bottom:10%;
+}
+.family-details{
+  margin-left: 0%;
+  margin-right: 85%;
+  display: flex;
+  margin-top: -4px;
+
+}
+
+.residential-address {
+  text-align: center;
+  color: rgb(7, 7, 7);
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+
+
+.email-address{
+  text-align: center;
+  color: rgb(7, 7, 7);
+  margin-top: -1%; 
+  margin-bottom: -1%;
+}
+
+.contact-details{
+  text-align: center;
+  color: rgb(7, 7, 7);
+  margin-top: 0%; 
+  margin-bottom: 0%;
+}
+p{
+  font-size: 20px;
+  margin-top: -2%;
+}
+
+.left-image {
+  position: absolute;
+  width: 6%; 
+}
+.address-container{
+  margin-bottom: 5px;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-text {
+  font-family: 'Poppins', sans-serif;
+} 
+
+.gender-dropdown {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.gender-dropdown label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.gender-dropdown select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9
+}
+
+
+.a4 {
+  width: 214mm;
+  height: 297mm;
+  padding: -4%;
+  margin: auto;
+  
+  box-shadow: 0 0 5mm rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+  border: 4px solid #000;
+}
+
+.inner-border {
+  width: calc(100% - 30px); 
+  height: calc(100% - 30px); 
+  border: 3px solid rgb(14, 13, 13); 
+  box-sizing: border-box; 
+  margin: 15px;
+  padding: 10%;
+}
+
+@media print {
+  body, .a4 {
+    margin: 0;
+    box-shadow: none;
+  }
+  
+}
+
+.details-container {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.personal-detail {
+  width: 48%; 
+}
+
+.left { 
+  margin-left: -6%;
+}
+
+.right{
+  
+    margin-right: -13%;
+  
+}
+.family-detail.left{
+  margin-left: -35%;
+}
+
+.family-detail.right {
+  
+  margin-left: 236%;
+
+}
+table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+.name{
+  margin-top: 3%;
+}
+
+.address {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+th, td {
+  padding: 3px;
+}
+
+.pull-stop {
+  white-space: nowrap; 
+}
+
+.divider1{
+  height: 2px;
+  background-color: #000;
+  margin-left: -14%;
+  margin-right: -13%;
+  margin-top: 0%;
+}
+
+.divider {
+  height: 2px;
+  background-color: #000;
+  margin-left: -14%;
+  margin-right: -13%;
+  margin-top: -8%;
+  margin-bottom: 3%;
+}
+
+.divider2 {
+  height: 2px;
+  background-color: #000;
+  margin-left: 0%;
+  margin-right: 2%;
+  margin-top: -16%;
+}
+
+.table-divider {
+  border: 0;
+  height: 2px;
+  background: #000;
+  width: 100%;
+  margin-left: -10p;
+  margin-right: -10px;
+  margin-top: -12px;
+  margin-bottom: 21px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.family-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.family-table td {
+  padding: 8px; 
+  border-bottom: 1px solid #ccc; 
+}
