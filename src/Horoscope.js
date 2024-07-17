@@ -1,8 +1,8 @@
 import React from 'react';
 import { table1, table2 } from './horoscopeTables';
 import data from './data.json';
-import images from './images/logo.svg';
-import image from './images/'
+import logoImage from './images/logo.svg';
+import image from './images/img1.svg'; // Updated path
 import './App.css';
 
 const renderCellContent = (value) => {
@@ -68,9 +68,14 @@ const DataTable = ({ selectedGender }) => {
       <div className="inner-border">
         <div className="main-header">
           <div className="top-heading">
-            <div className="heading">
-              <img src={images} alt="Canvas Logo" className="logo-image" />
-              Sri Pachaivaiyamman Thunai
+            <div className="heading-container">
+              <div className="corner-image-container">
+                <img src={image} alt="img1" className="corner-image" />
+              </div>
+              <div className="heading">
+                <img src={logoImage} alt="Canvas Logo" className="logo-image" />
+                Sri Pachaivaiyamman Thunai
+              </div>
             </div>
             <div className="sub-heading">
               Janani Janma Sowkyanam Varathanee Kulasumbathaam<br />
@@ -213,11 +218,11 @@ const DataTable = ({ selectedGender }) => {
       <p>{personalInfo.name}.{qualification.Education}.{qualification.fieldOfStudy}.({personalInfo.Profession})</p>
       </div>
       <div className="residential-address">
-          <p className="address"> {residentialAddress.address} {residentialAddress.landmark} {residentialAddress.hometown}, {residentialAddress.city}, {residentialAddress.stateName} {residentialAddress.pincode} {residentialAddress.nationality}</p>
-        </div>
-        <div className="contact-details">
-          <p className="address">&nbsp;&nbsp;&nbsp;&nbsp;Mobile : {contactDetails.contactNumber} &nbsp;&nbsp; &nbsp;&nbsp; WhatsApp Number : {contactDetails.whatsappNumber}</p>
-        </div> 
+        <p className="address"> {residentialAddress.address} {residentialAddress.landmark} {residentialAddress.hometown}, {residentialAddress.city}, {residentialAddress.stateName} {residentialAddress.pincode} {residentialAddress.nationality}</p>
+      </div>
+      <div className="contact-details">
+        <p className="address">&nbsp;&nbsp;&nbsp;&nbsp;Mobile : {contactDetails.contactNumber} &nbsp;&nbsp; &nbsp;&nbsp; WhatsApp Number : {contactDetails.whatsappNumber}</p>
+      </div> 
     </div>
   );
 };
