@@ -2,7 +2,6 @@ import React from 'react';
 import { table1, table2 } from './horoscopeTables';
 import data from './data.json';
 import logoImage from './images/logo.svg';
-import image from './images/img1.svg'; // Updated path
 import './App.css';
 
 const renderCellContent = (value) => {
@@ -26,10 +25,10 @@ const formatHeight = (height) => {
 const Horoscope = () => {
   return (
     <div className="horoscope-container">
-      <table className="horoscope-table" style={{ width: '41%' }}>
+      <table className="horoscope-table" style={{ width: '46%' }}>
         <tbody>
           {table1.map((row, rowIndex) => (
-            <tr key={rowIndex}>
+            <tr key={rowIndex} className="dotted-row">
               {row.map((cell, cellIndex) => (
                 <td key={cellIndex} className="table" colSpan={cell.colspan} rowSpan={cell.rowspan}>
                   {renderCellContent(cell.value)}
@@ -39,10 +38,10 @@ const Horoscope = () => {
           ))}
         </tbody>
       </table>
-      <table className="horoscope-table" style={{ width: '41%' }}>
+      <table className="horoscope-table" style={{ width: '46%' }}>
         <tbody>
           {table2.map((row, rowIndex) => (
-            <tr key={rowIndex}>
+            <tr key={rowIndex} className="dotted-row">
               {row.map((cell, cellIndex) => (
                 <td key={cellIndex} className="table" colSpan={cell.colspan} rowSpan={cell.rowspan}>
                   {renderCellContent(cell.value)}
@@ -57,11 +56,8 @@ const Horoscope = () => {
 };
 
 const DataTable = ({ selectedGender }) => {
-  const { birthDetails, horoscopeDetails, familyDetails, contactDetails, personalInfo, ownHouse, qualification, occupation, residentialAddress } = data;
+  const { birthDetails, horoscopeDetails, familyDetails, contactDetails, personalInfo,  qualification, occupation, residentialAddress } = data;
 
-  const getName = () => {
-    return selectedGender === 'male' ? 'Sri Math Punya Kumara Selvan' : 'Sri Math Punya Kumari Selvi';
-  };
 
   return (
     <div className="a4">
@@ -69,12 +65,10 @@ const DataTable = ({ selectedGender }) => {
         <div className="main-header">
           <div className="top-heading">
             <div className="heading-container">
-              <div className="corner-image-container">
-                <img src={image} alt="img1" className="corner-image" />
-              </div>
               <div className="heading">
                 <img src={logoImage} alt="Canvas Logo" className="logo-image" />
-                Sri Pachaivaiyamman Thunai
+                Subamasthu<br/>
+                Sri Vasavi Sagayam
               </div>
             </div>
             <div className="sub-heading">
@@ -86,27 +80,27 @@ const DataTable = ({ selectedGender }) => {
             <div className="personal-detail left">
               <table>
                 <tbody>
-                  <tr>
-                    <th scope="row">Date of Birth</th>
+                  <tr className="dotted-row">
+                    <th scope="row">Date of Birth : </th>
                     <td>{birthDetails.dob.dateOfBirth}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row" >Tamil Year</th>
                     <td>{birthDetails.tamilYear}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Tamil Month</th>
                     <td>{birthDetails.tamilMonth}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row" >Tamil Date</th>
                     <td>{birthDetails.tamilDate}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row" >Day</th>
                     <td>{birthDetails.dob.day}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row" >Birth Time</th>
                     <td>{birthDetails.dob.time}</td>
                   </tr>
@@ -116,27 +110,27 @@ const DataTable = ({ selectedGender }) => {
             <div className="personal-detail right">
               <table>
                 <tbody>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Naaligai</th>
                     <td>{horoscopeDetails.naaligai}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Birth Star</th>
                     <td>{horoscopeDetails.BirthStar}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Rasi</th>
                     <td>{horoscopeDetails.rasi}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Thithi</th>
                     <td>{horoscopeDetails.thithi}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Lagnam</th>
                     <td>{horoscopeDetails.lagnam}</td>
                   </tr>
-                  <tr>
+                  <tr className="dotted-row">
                     <th scope="row">Place Of Birth</th>
                     <td>{birthDetails.dob.placeOfBirth}</td>
                   </tr>
@@ -144,46 +138,43 @@ const DataTable = ({ selectedGender }) => {
               </table>
             </div>
           </div>
-          <div className="divider1"></div>
-          <div className="below-heading">
-            Thirunelveli District
-          </div>
-          <div className="second-name">
-            S/o Late <b> Mr. Ponmani - Mrs. Porselvi</b>
-          </div>
-          <div className="third-line">
-            <p className="name">{getName()}.<b> Kamalesh P</b></p>
-          </div>
-          <hr className="table-divider" />
-        </div>
-        <div className="mid-heading">
-          <h3><span className="blue-text">Mars </span> <span className="brown-text">Dasa Balance : 6months</span></h3>
-        </div>
-        <Horoscope />
-        <div className="middle">
-          <h3>Namadhayam : Kamalesh . P</h3>
-        </div>
-        <div className="third">
+         </div>
+         <div className="additional-data">
+        <p>
+          Mr <b><span className="dotted-underline">{familyDetails.fatherName}- Mrs.{familyDetails.motherName}</span></b> For Them  {selectedGender === 'male' ? 'Kumaran' : 'Kumari'}.
+        </p>
+      </div>
+      <div className="second-name">
+        <p className="name">
+          <b><span className="dotted-underline">{personalInfo.name}</span></b> Mars Dasa balance - <b><span className="dotted-underline">{horoscopeDetails.dasaBalance}</span></b>.
+        </p>
+      </div>
+      <Horoscope />
+      <div className="third">
           <p>Gothram : Shiva Gothram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Madhulam : dfdfdsa</p>
-        </div>
-        <div className="divider"></div>
+    </div>
+          <div className="divider"></div>
         <div className="family-details">
           <div className="family-detail left">
             <table>
               <tbody>
                 <tr>
-                  <td>
-                    <b>Father</b> : {familyDetails.fatherAlive} - <b>Mother</b> : {familyDetails.motherAlive}
+                    <th> <b>Father</b> :</th>
+                  <td  className="dotted-row">
+                    {familyDetails.fatherAlive} - <b>Mother</b> : {familyDetails.motherAlive}
                   </td>
                 </tr>
                 <tr>
-                  <td><b>Height</b> : {formatHeight(familyDetails.height)}</td>
+                    <th><b>Height</b> :</th>
+                  <td  className="dotted-row"> {formatHeight(familyDetails.height)}</td>
                 </tr>
                 <tr>
-                  <td><b>Blood Group</b> : {personalInfo.bloodGroup}</td>
+                    <th><b>Blood Group</b> :</th>
+                  <td className="dotted-row"> {personalInfo.bloodGroup}</td>
                 </tr>
                 <tr>
-                  <td><b>Complexion</b> : {personalInfo.complextion}</td>
+                    <th><b>Complexion</b> : </th>
+                  <td className="dotted-row">{personalInfo.complextion}</td>
                 </tr>
               </tbody>
             </table>
@@ -192,28 +183,32 @@ const DataTable = ({ selectedGender }) => {
             <table>
               <tbody>
                 <tr>
-                  <td>
-                    <b>Brother</b>  : {familyDetails.siblings.brother.number} (Elder-{familyDetails.siblings.brother.marriageNum})
+                    <th> <b>Brother</b>  :</th>
+                  <td className="dotted-row"> {familyDetails.siblings.brother.number} (Elder-{familyDetails.siblings.brother.marriageNum})
                   </td>
                 </tr>
                 <tr>
-                  <td><b>Education</b> : {qualification.Education}</td>
+                    <th><b>Education</b> :</th>
+                  <td className="dotted-row"> {qualification.Education}</td>
                 </tr>
                 <tr>
-                  <td><b>Profession</b> : {personalInfo.Profession}</td>
+                    <th><b>Profession</b> :</th>
+                  <td className="dotted-row">{personalInfo.Profession}</td>
                 </tr>
                 <tr>
-                  <td><b>Income</b> : {occupation.Income}</td>
+                    <th><b>Income</b> : </th>
+                  <td className="dotted-row">{occupation.Income}</td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
-      </div>
-      <div className="divider2"></div>
-      <div className="address">
+          </div>
+    </div>
+    <div className="divider2"></div>
+    <div className="address">
         Address
       </div>
+      <div className='bottom'>
       <div className='name'>
       <p>{personalInfo.name}.{qualification.Education}.{qualification.fieldOfStudy}.({personalInfo.Profession})</p>
       </div>
@@ -223,6 +218,7 @@ const DataTable = ({ selectedGender }) => {
       <div className="contact-details">
         <p className="address">&nbsp;&nbsp;&nbsp;&nbsp;Mobile : {contactDetails.contactNumber} &nbsp;&nbsp; &nbsp;&nbsp; WhatsApp Number : {contactDetails.whatsappNumber}</p>
       </div> 
+      </div>
     </div>
   );
 };
