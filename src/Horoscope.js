@@ -1,6 +1,6 @@
 import React from 'react';
-import { table1, table2 } from './horoscopeTables';
 import data from './data.json';
+import { table1, table2 } from './horoscopeTables';
 import logoImage from './images/logo.svg';
 import './App.css';
 
@@ -55,172 +55,113 @@ const Horoscope = () => {
   );
 };
 
+
 const DataTable = ({ selectedGender }) => {
-  const { birthDetails, horoscopeDetails, familyDetails, contactDetails, personalInfo,  qualification, occupation, residentialAddress } = data;
+  const { birthDetails, horoscopeDetails, familyDetails, contactDetails, personalInfo, ownHouse, qualification, occupation, residentialAddress } = data;
 
+  
 
-  return (
+return (
     <div className="a4">
-      <div className="inner-border">
-        <div className="main-header">
-          <div className="top-heading">
-            <div className="heading-container">
+   <div className="background-image">
+   <div className="inner-border">
+    <div className="main-header">
+    <div className="top-heading">
+    <div className="heading-container">
               <div className="heading">
                 <img src={logoImage} alt="Canvas Logo" className="logo-image" />
-                Subamasthu<br/>
-                Sri Vasavi Sagayam
+                Sri Pachaivaiyamman Thunai
               </div>
-            </div>
+              </div>
             <div className="sub-heading">
               Janani Janma Sowkyanam Varathanee Kulasumbathaam<br />
               Padhavi Pooorva Punyanaam Likyathe Janma Pathrika
             </div>
-          </div>
-          <div className="details-container">
-            <div className="personal-detail left">
-              <table>
-                <tbody>
-                  <tr className="dotted-row">
-                    <th scope="row">Date of Birth : </th>
-                    <td>{birthDetails.dob.dateOfBirth}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row" >Tamil Year</th>
-                    <td>{birthDetails.tamilYear}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row">Tamil Month</th>
-                    <td>{birthDetails.tamilMonth}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row" >Tamil Date</th>
-                    <td>{birthDetails.tamilDate}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row" >Day</th>
-                    <td>{birthDetails.dob.day}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row" >Birth Time</th>
-                    <td>{birthDetails.dob.time}</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className='third-heading'>
+           <h3><strong><u>Janma Pathrika</u></strong></h3> 
             </div>
-            <div className="personal-detail right">
-              <table>
-                <tbody>
-                  <tr className="dotted-row">
-                    <th scope="row">Naaligai</th>
-                    <td>{horoscopeDetails.naaligai}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row">Birth Star</th>
-                    <td>{horoscopeDetails.BirthStar}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row">Rasi</th>
-                    <td>{horoscopeDetails.rasi}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row">Thithi</th>
-                    <td>{horoscopeDetails.thithi}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row">Lagnam</th>
-                    <td>{horoscopeDetails.lagnam}</td>
-                  </tr>
-                  <tr className="dotted-row">
-                    <th scope="row">Place Of Birth</th>
-                    <td>{birthDetails.dob.placeOfBirth}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-         </div>
-         <div className="additional-data">
-        <p>
-          Mr <b><span className="dotted-underline">{familyDetails.fatherName}- Mrs.{familyDetails.motherName}</span></b> For Them  {selectedGender === 'male' ? 'Kumaran' : 'Kumari'}.
-        </p>
+            <div>
+            <p>
+            Born in the auspicious Veguthanya year, in the month of Aadi, on the 4th date, which corresponds to the 20th of July, 1998 (Monday), during the Shukla Paksha, on the Thuvadasi tithi. The exact birth time was
+            at 1:56 AM, with 44 Naaligai and 00 Vinaadi elapsed. The individual was born under
+            the Rohini nakshatra, in the Taurus (Rishaba) rasi, specifically the 4th pada. The
+            ascendant (lagna) at the time of birth was Libra (Thulam). The place of birth is
+            Thindukal (Dindigul)  Mr <b><span>{familyDetails.fatherName}- Mrs.{familyDetails.motherName}</span></b> For Them.{selectedGender === 'male' ? 'Kumaran' : 'Kumari'}   <b><span className="dotted-underline">{personalInfo.name}</span></b> suba jananam.
+          </p>
+       </div>
+       <hr className="table-divider" />
+       <div className="mid-heading">
+          <h3><span className="blue-text">Mars </span> <span className="brown-text">Dasa Balance : 6months</span></h3>
       </div>
-      <div className="second-name">
-        <p className="name">
-          <b><span className="dotted-underline">{personalInfo.name}</span></b> Mars Dasa balance - <b><span className="dotted-underline">{horoscopeDetails.dasaBalance}</span></b>.
-        </p>
-      </div>
-      <Horoscope />
+      <Horoscope />   
       <div className="third">
-          <p>Gothram : Shiva Gothram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Madhulam : dfdfdsa</p>
-    </div>
-          <div className="divider"></div>
-        <div className="family-details">
-          <div className="family-detail left">
-            <table>
-              <tbody>
-                <tr>
-                    <th> <b>Father</b> :</th>
-                  <td  className="dotted-row">
-                    {familyDetails.fatherAlive} - <b>Mother</b> : {familyDetails.motherAlive}
-                  </td>
-                </tr>
-                <tr>
-                    <th><b>Height</b> :</th>
-                  <td  className="dotted-row"> {formatHeight(familyDetails.height)}</td>
-                </tr>
-                <tr>
-                    <th><b>Blood Group</b> :</th>
-                  <td className="dotted-row"> {personalInfo.bloodGroup}</td>
-                </tr>
-                <tr>
-                    <th><b>Complexion</b> : </th>
-                  <td className="dotted-row">{personalInfo.complextion}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="family-detail right">
-            <table>
-              <tbody>
-                <tr>
-                    <th> <b>Brother</b>  :</th>
-                  <td className="dotted-row"> {familyDetails.siblings.brother.number} (Elder-{familyDetails.siblings.brother.marriageNum})
-                  </td>
-                </tr>
-                <tr>
-                    <th><b>Education</b> :</th>
-                  <td className="dotted-row"> {qualification.Education}</td>
-                </tr>
-                <tr>
-                    <th><b>Profession</b> :</th>
-                  <td className="dotted-row">{personalInfo.Profession}</td>
-                </tr>
-                <tr>
-                    <th><b>Income</b> : </th>
-                  <td className="dotted-row">{occupation.Income}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          </div>
-    </div>
-    <div className="divider2"></div>
-    <div className="address">
+        <p>Name- {personalInfo.name}</p>
+          <p>Gothram -{horoscopeDetails.gothram} </p>
+          <p>Madhulam -{horoscopeDetails.mathulam}</p>
+       </div>
+       <div className="family-details">
+  <div className="family-detail left">
+    <table>
+      <tbody>
+        <tr>
+          <th><b>Father</b> :</th>
+          <td>{familyDetails.fatherAlive} - <b>Mother</b> : {familyDetails.motherAlive}</td>
+        </tr>
+        <tr>
+          <th><b>Height</b> :</th>
+          <td>{formatHeight(familyDetails.height)}</td>
+        </tr>
+        <tr>
+          <th><b>Blood Group</b> :</th>
+          <td>{personalInfo.bloodGroup}</td>
+        </tr>
+        <tr>
+          <th><b>Complexion</b> :</th>
+          <td>{personalInfo.complextion}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div className="family-detail right">
+    <table>
+      <tbody>
+        <tr>
+          <th><b>Brother</b> :</th>
+          <td>{familyDetails.siblings.brother.number} (Elder-{familyDetails.siblings.brother.marriageNum})</td>
+        </tr>
+        <tr>
+          <th><b>Education</b> :</th>
+          <td>{qualification.Education}</td>
+        </tr>
+        <tr>
+          <th><b>Profession</b> :</th>
+          <td>{personalInfo.Profession}</td>
+        </tr>
+        <tr>
+          <th><b>Income</b> :</th>
+          <td>{occupation.Income}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<div className="address">
         Address
       </div>
-      <div className='bottom'>
-      <div className='name'>
-      <p>{personalInfo.name}.{qualification.Education}.{qualification.fieldOfStudy}.({personalInfo.Profession})</p>
-      </div>
       <div className="residential-address">
-        <p className="address"> {residentialAddress.address} {residentialAddress.landmark} {residentialAddress.hometown}, {residentialAddress.city}, {residentialAddress.stateName} {residentialAddress.pincode} {residentialAddress.nationality}</p>
+          <p className="full-address">{residentialAddress.address} {residentialAddress.landmark} {residentialAddress.hometown} {residentialAddress.stateName} {residentialAddress.pincode} {residentialAddress.nationality}</p>
+        </div>
+        <div className="contact-details">
+          <p className="phone-number">&nbsp;&nbsp;&nbsp;&nbsp;Mobile: {contactDetails.contactNumber} &nbsp;&nbsp;&nbsp;&nbsp; WhatsApp Number: {contactDetails.whatsappNumber}</p>
+        </div>
       </div>
-      <div className="contact-details">
-        <p className="address">&nbsp;&nbsp;&nbsp;&nbsp;Mobile : {contactDetails.contactNumber} &nbsp;&nbsp; &nbsp;&nbsp; WhatsApp Number : {contactDetails.whatsappNumber}</p>
-      </div> 
-      </div>
-    </div>
+        </div>
+        </div>
+          </div>
   );
 };
 
 export default DataTable;
+
+
