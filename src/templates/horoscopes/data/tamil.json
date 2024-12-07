@@ -1,0 +1,138 @@
+{
+    "birthDetails": {
+      "dob": {
+        "dateOfBirth": "07-03-2004",
+        "placeOfBirth": "திருநெல்வேலி",
+        "age": "20 ஆண்டுகள்",
+        "time": "22:13",
+        "day": "ஞாயிற்றுக்கிழமை"
+      },
+      "tamilYear": "ஶ்ரீமுக",
+      "tamilMonth": "ஆவணி",
+      "tamilDate": "10"
+    },
+    "horoscopeDetails": {
+      "rasi": "சிம்மம்",
+      "nakshatra": "சுவாதி",
+      "lagnam": "கடகம்",
+      "BirthStar": "ddff",
+      "gothram": "சிவ கோத்திரம்",
+      "mathulam": "dfdfdsa",
+      "naaligai": "df",
+      "thithi": "fadf",
+      "dasaPlanet": "afsd",
+      "dasaBalance": "6 மாதங்கள்"
+    },
+    "rasiKatam": [
+      [],
+      ["புதன்"],
+      [],
+      [],
+      ["சுக்கிரன்"],
+      ["சந்திரன்"],
+      ["செவ்வாய்"],
+      [],
+      [],
+      ["குரு"],
+      [],
+      ["சனி"]
+    ],
+    "rasiPlanets": {
+      "Ma": "7",
+      "Ve": "5",
+      "Me": "2",
+      "Su": "7",
+      "Ka": "12",
+      "Ju": "10",
+      "Mo": "6",
+      "Sa": "12",
+      "Ke": "7",
+      "La": "5",
+      "rasi": ""
+    },
+    "navamsaKatam": [
+      ["சனி"],
+      [],
+      [],
+      [],
+      [],
+      ["சனி", "சந்திரன்"],
+      [],
+      ["சுக்கிரன்", "புதன்", "குரு", "ராகு"],
+      [],
+      ["செவ்வாய்", "சூரியன்"],
+      ["லக்னம்"],
+      []
+    ],
+    "navamsaPlanets": {
+      "Ma": "10",
+      "Ve": "8",
+      "Me": "8",
+      "Su": "10",
+      "Ka": "6",
+      "Ju": "8",
+      "Mo": "6",
+      "Sa": "1",
+      "Ke": "8",
+      "La": "11"
+    },
+    "familyDetails": {
+      "fatherName": "பொன்மணி",
+      "fatherOccupation": "gfhg",
+      "fatherAlive": "மறைந்தார்",
+      "motherName": "பொர்செல்வி",
+      "motherOccupation": "இல்லை",
+      "motherAlive": "வாழ்ந்து வருகிறார்",
+      "religion": "முஸ்லிம் - பிறர்",
+      "caste": "ஆச்சிராபாக்கம் செட்டியார்",
+      "height": "4.8",
+      "siblings": {
+        "brother": {
+          "number": 1,
+          "marriageNum": 0
+        },
+        "sister": {
+          "number": 1,
+          "marriageNum": 0
+        }
+      }
+    },
+    "contactDetails": {
+      "emailId": "kamaleshponmani0703@gmail.com",
+      "contactNumber": "9xxxx346283",
+      "whatsappNumber": "9xxxx346283",
+      "alternativeContactNumber": ""
+    },
+    "ownHouse": "ஆம்",
+    "personalInfo": {
+      "name": "கமலேஷ் பி",
+      "iAm": "மாப்பிள்ளை",
+      "Profession": "முன்னணி டெவலப்பர்",
+      "height": "4.8",
+      "weight": "54",
+      "profileImage": "",
+      "bloodGroup": "ஓ+",
+      "complextion": "கருப்பு",
+      "maritalStatus": "தொகை"
+    },
+    "qualification": {
+      "fieldOfStudy": "பி.ஜி.டி.சி.ஏ",
+      "Education": "பி.எஸ்.சி"
+    },
+    "occupation": {
+      "companyName": "அட்டூர்",
+      "designation": "டெவலப்பர் பயிற்சி",
+      "Income": "dfs",
+      "cityOfWorking": "திருநெல்வேலி"
+    },
+    "residentialAddress": {
+      "address": "24, 3வது தெரு, சிகரம் நகர், சுதமல்லி விளக்கு.",
+      "landmark": "",
+      "hometown": "திருநெல்வேலி",
+      "city": "திருநெல்வேலி",
+      "stateName": "தமிழ்நாடு",
+      "nationality": "",
+      "pincode": "627604"
+    }
+  }
+  

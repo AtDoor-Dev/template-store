@@ -1,0 +1,219 @@
+{
+    "above": {
+      "heading": "வாசவி சஹாயம் <br> அங்காள பரமேஸ்வரி அம்மன் துணை"
+    },
+    "sub-heading": {
+      "sub-heading": "ஜனனி ஜன்ம சௌக்கியனம் வரதநி குலசம்பதாம்<br>பதவி பூர்வ புண்ணியம் எழுதப்படுகிறது ஜன்மா பத்ரிகா"
+    },
+    "_id": { "$oid": "66647d6f4197093e1bb9cddb" },
+    "registerId": "66647d4f4759150cba1afef8",
+    "__v": 0,
+    "birthDetails": {
+      "dob": {
+        "dateOfBirth": "07-03-2004",
+        "placeOfBirth": "திருநெல்வேலி",
+        "age": "20 வயது",
+        "time": "22:13",
+        "day": "ஞாயிறு"
+      },
+      "tamilYear": "ஶ்ரீமுக",
+      "tamilMonth": "ஆவணி",
+      "tamilDate": "10"
+    },
+    "horoscopeDetails": {
+      "rasi": "சிம்மம்",
+      "nakshatra": "சுவாதி",
+      "lagnam": "கடகம்",
+      "BirthStar": "ddff",
+      "gothram": "சிவ கோத்திரம்",
+      "mathulam": "dfdfdsa",
+      "naaligai": "df",
+      "thithi": "fadf",
+      "dasaPlanet": "afsd",
+      "dasaBalance": "6 மாதங்கள்"
+    },
+    "below": {
+      "heading": "தந்தை Late.பொன்மணி - P.போர்செல்வி"
+    },
+    "second": {
+      "name": "சிரஞ்சீவி. P.கமலேஷ்"
+    },
+    "third": {
+      "line": "கோத்திரம்: சிவகோத்திரம் மாதுலம்: dfdfdsa"
+    },
+    "rasiKatam": [
+      [],
+      ["புதன்"],
+      [],
+      [],
+      ["சுக்ரன்"],
+      ["சந்திரன்"],
+      ["செவ்வாய்"],
+      [],
+      [],
+      ["குரு"],
+      [],
+      ["சனி"]
+    ],
+    "rasiPlanets": {
+      "Ma": "7",
+      "Ve": "5",
+      "Me": "2",
+      "Su": "7",
+      "Ka": "12",
+      "Ju": "10",
+      "Mo": "6",
+      "Sa": "12",
+      "Ke": "7",
+      "La": "5",
+      "rasi": ""
+    },
+    "navamsaKatam": [
+      ["சனி"],
+      [],
+      [],
+      [],
+      [],
+      ["சனி", "சந்திரன்"],
+      [],
+      ["சுக்ரன்", "புதன்", "குரு", "கேது"],
+      [],
+      ["செவ்வாய்", "சூரியன்"],
+      ["லக்னம்"],
+      []
+    ],
+    "navamsaPlanets": {
+      "Ma": "10",
+      "Ve": "8",
+      "Me": "8",
+      "Su": "10",
+      "Ka": "6",
+      "Ju": "8",
+      "Mo": "6",
+      "Sa": "1",
+      "Ke": "8",
+      "La": "11"
+    },
+    "Tablevalue": {
+      "Me": "புதன்",
+      "Ve": "சுக்ரன்",
+      "Mo": "சந்திரன்",
+      "Ma": "செவ்வாய்",
+      "Ju": "குரு",
+      "Ka": "கேது",
+      "rasi": "ராசி",
+      "navasam": "நவம்சம்",
+      "ve": "சுக்ரன்",
+      "Sa": "சனி"
+    },
+    "third-line": {
+      "third-line": "செவ்வாய் தசை பாக்கி: 6 மாதங்கள்"
+    },
+    "familyDetails": {
+      "fatherName": "பொன்மணி",
+      "fatherOccupation": "gfhg",
+      "fatherAlive": "இறந்தார்",
+      "motherName": "போர்செல்வி",
+      "motherOccupation": "இல்லை",
+      "motherAlive": "வாழ்நிற்பவர்",
+      "religion": "முஸ்லிம் - மற்றவர்கள்",
+      "caste": "அச்சிராப்பாக்கம் செட்டியார்",
+      "height": "4.8",
+      "siblings": {
+        "brother": {
+          "number": 1,
+          "marriageNum": 0
+        },
+        "sister": {
+          "number": 1,
+          "marriageNum": 0
+        }
+      }
+    },
+    "contactDetails": {
+      "emailId": "kamaleshponmani0703@gmail.com",
+      "contactNumber": "9xxxx346283",
+      "whatsappNumber": "9xxxx346283",
+      "alternativeContactNumber": ""
+    },
+    "ownHouse": "ஆம்",
+    "personalInfo": {
+      "name": "கமலேஷ் P",
+      "iAm": "மாப்பிள்ளை",
+      "Profession": "முன் முனை வளர்ப்பாளர்",
+      "height": "4.8",
+      "weight": "54",
+      "profileImage": "",
+      "bloodGroup": "O+ve",
+      "complextion": "கருப்பு",
+      "maritalStatus": "த独ை"
+    },
+    "qualification": {
+      "fieldOfStudy": "பி.ஜி.டி.சி.ஏ",
+      "Education": "B.Sc"
+    },
+    "occupation": {
+      "companyName": "அடடூர்",
+      "designation": "Developer Trainee",
+      "Income": "dfs",
+      "cityOfWorking": "திருநெல்வேலி"
+    },
+    "below1": {
+      "residentialAddress": {
+        "address": "24, 3rd street, சிகரம் நகர், சுத்தமல்லி விளக்கு.",
+        "landmark": "",
+        "hometown": "திருநெல்வேலி",
+        "city": "திருநெல்வேலி",
+        "stateName": "தமிழ்நாடு",
+        "nationality": "",
+        "pincode": "627604"
+      }
+    },
+    "label": {
+      "tableValue": {
+        "dob": "பிறந்த தேதி",
+        "pob": "பிறந்த இடம்",
+        "time": "தமிழ் ஆண்டு",
+        "day": "நாள்",
+        "tamilYear": "தமிழ் ஆண்டு",
+        "tamilMonth": "தமிழ் மாதம்",
+        "tamilDate": "தமிழ் தேதி",
+        "birthtime": "பிறந்த நேரம்",
+        "rasi": "பிறந்த ராசி",
+        "nakshatra": "நட்சத்திரம்",
+        "lagnam": "லக்கினம்",
+        "mathulam": "மதுலம்",
+        "thithi": "திதி",
+        "gothram": "கோத்திரம்",
+        "dasaPlanet": "தசாபுரிஷன்",
+        "dasaBalance": "தசாபாக்கி",
+        "fatherAlive": "தந்தை",
+        "motherAlive": "தாய்",
+        "fatherName": "தந்தை பெயர்",
+        "motherName": "தாய் பெயர்",
+        "fatherOccupation": "தந்தையின் தொழில்",
+        "motherOccupation": "தாயின் தொழில்",
+        "religion": "மதம்",
+        "caste": "ஜாதி",
+        "height": "உயரம்",
+        "brother": "சகோதரன்",
+        "sister": "சகோதரி",
+        "Elder": "முதிர்ந்த",
+        "fieldOfStudy": "படிப்பு துறை",
+        "degree": "படிப்பு",
+        "ownhouse": "சொந்த வீடு",
+        "bloodGroup": "இரத்தக்குழு",
+        "complextion": "தோல் நிறம்",
+        "Income": "வருமானம்",
+        "Profession": "தொழில்",
+        "Education": "கல்வி",
+        "naaligai": "நாழிகை",
+        "emailId": "மின்னஞ்சல்",
+        "Address": "முகவரி",
+        "BirthStar": "பிறந்த நட்சத்திரம்",
+        "contactNumber": "கைபேசி",
+        "whatsappNumber": "வாட்ஸ்அப்"
+      }
+    }
+  }
+  

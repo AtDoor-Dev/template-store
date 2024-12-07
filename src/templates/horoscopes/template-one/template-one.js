@@ -106,9 +106,7 @@ const HoroscopeOne = ({
         <ThirdLine>
           <h5>Gothram : Shiva Gothram &nbsp;&nbsp; Madhulam : dfdfdsa</h5>
         </ThirdLine>
-
         <HoroscopeBoxes />
-
         <MidHeading>
           <h3><BlueText>Mars </BlueText> <BrownText>Dasa Balance : 6months</BrownText></h3>
         </MidHeading>
@@ -137,7 +135,6 @@ const HoroscopeOne = ({
             </tbody>
           </Table>
         </FamilyDetails>
-
         <Address>
           Address: {residentialAddress.address} {residentialAddress.landmark} {residentialAddress.hometown}, {residentialAddress.city}, {residentialAddress.stateName} {residentialAddress.pincode} {residentialAddress.nationality}
         </Address>
